@@ -9,7 +9,7 @@ export default defineConfig({
   server: {
     open: true,
   },
-  base: '/',
+  base: '/todo-list/',
   build: {
     outDir: 'dist',
   },
