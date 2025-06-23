@@ -1,0 +1,95 @@
+.item {
+  padding: 15px 15px 15px 60px;
+  border-bottom: 1px solid #ededed;
+  font-size: 24px;
+  line-height: 1.1;
+}
+
+.item-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.checkbox-container {
+  margin-right: 15px;
+}
+
+.checkbox {
+  position: absolute;
+  height: 22px;
+  width: 22px;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.checkmark {
+  width: 22px;
+  height: 22px;
+  border: 2px solid #af2f2f33;
+  border-radius: 4px;
+  transition: background 0.2s;
+  display: flex;
+  justify-content: center;
+}
+
+.checkmark::after {
+  content: '';
+  display: none;
+  width: 8px;
+  height: 13px;
+  border: solid #af2f2f50;
+  border-width: 0 3px 3px 0;
+  border-radius: 1px;
+  transform: rotate(45deg);
+}
+
+.checkbox:checked + .checkmark::after {
+  display: block;
+}
+
+.text {
+  margin-right: auto;
+  word-break: break-word;
+}
+
+.completed {
+  color: #d9d9d9;
+  text-decoration: line-through;
+}
+
+.edit-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.edit-input {
+  width: 100%;
+  font-size: inherit;
+  line-height: inherit;
+  padding: 0;
+  border: none;
+  outline: none;
+  color: inherit;
+}
+
+.edit-btn,
+.save-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-left: 15px;
+
+  svg {
+    width: 22px;
+    height: 22px;
+    color: #7b7b7b;
+  }
+
+  &:hover svg {
+    color: #af2f2f50;
+  }
+}
