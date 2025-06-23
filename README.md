@@ -2,6 +2,9 @@
 
 A simple ToDo application built with React, TypeScript, and Vite.
 
+The application is deployed at:
+**https://climbingirl.github.io/todo-list/**
+
 ## Features
 
 - Add new tasks
@@ -27,6 +30,12 @@ npm run start
 
 ```
 npm run test
+```
+
+## Running deployment
+
+```
+npm run deploy
 ```
 
 ## Project Structure
